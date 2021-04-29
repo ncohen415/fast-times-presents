@@ -1,5 +1,25 @@
 query PREVIEW_QUERY($id: ID!) {
   page(id: $id, idType: ID, asPreview: true) {
+    HomePageACF {
+      fbIcon {
+        __typename
+        id
+      }
+      fbLink
+      fieldGroupName
+      homePageHeading
+      homePageSubHeading
+      igIcon {
+        __typename
+        id
+      }
+      igLink
+      twitterIcon {
+        __typename
+        id
+      }
+      twitterLink
+    }
     ancestors(first: 100) {
       nodes {
         id
