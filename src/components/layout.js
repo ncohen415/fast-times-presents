@@ -9,10 +9,10 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { getImage } from "gatsby-plugin-image"
 import SEO from "../components/seo"
 
-import { convertToBgImage, BgImage } from "gbimage-bridge"
+import { BgImage } from "gbimage-bridge"
 
 //components
 import Header from "./Header/header"
@@ -39,7 +39,7 @@ const LayoutContainer = styled.div`
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query LayoutQuery {
-      backgroundImage: file(relativePath: { eq: "asj.jpg" }) {
+      backgroundImage: file(relativePath: { eq: "FastTimes.jpg" }) {
         childImageSharp {
           gatsbyImageData(
             width: 1000
@@ -57,8 +57,6 @@ const Layout = ({ children }) => {
   `)
 
   const image = getImage(data.backgroundImage)
-  const bgImage = convertToBgImage(image)
-  console.log(image)
 
   return (
     <>

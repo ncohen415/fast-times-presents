@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 //Pages
-import Home from "../PageComponents/home-page"
+import Home from "../components/PageComponents/home-page"
 
 const WpPageTemplate = ({ data }) => {
   const page = data?.allWpPage?.edges[0]?.node || {}
