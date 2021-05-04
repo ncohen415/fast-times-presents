@@ -107,7 +107,6 @@ const Home = data => {
               className="heading"
               dangerouslySetInnerHTML={{ __html: homeACF.homePageHeading }}
             />
-
             <hr />
             <div class="fast-times-copy">
               <p>{homeACF.homePageSubHeading}</p>
