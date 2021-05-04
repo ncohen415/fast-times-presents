@@ -15,7 +15,7 @@ import SEO from "../components/seo"
 import { BgImage } from "gbimage-bridge"
 
 //components
-import Header from "./Header/header"
+// import Header from "./Header/header"
 import "./layout.css"
 
 const LayoutContainer = styled.div`
@@ -61,7 +61,15 @@ const Layout = ({ children }) => {
   return (
     <>
       <SEO />
-      <BgImage image={image} style={{ width: "100vw", height: "100vh" }}>
+      <BgImage
+        image={image}
+        style={{
+          width: "100vw",
+          height: "100vh",
+          backgroundAttachment: "fixed",
+          backgroundPosition: "top",
+        }}
+      >
         {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
         <LayoutContainer>
           <div class="overlay" />

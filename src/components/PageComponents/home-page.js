@@ -9,7 +9,7 @@ import Layout from "../layout"
 //images
 import Instagram from "../../images/svgs/IG.svg"
 import Facebook from "../../images/svgs/FB.svg"
-import Twitter from "../../images/svgs/TW.svg"
+// import Twitter from "../../images/svgs/TW.svg"
 
 const HomePageContainer = styled.div`
   width: 100%;
@@ -124,7 +124,7 @@ const Home = data => {
                     <Facebook />
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href={homeACF.twitterLink}
                     target="_blank"
@@ -132,7 +132,7 @@ const Home = data => {
                   >
                     <Twitter />
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
